@@ -1,0 +1,17 @@
+# ignore mac system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# ignore windows system files
+ehthumbs.db
+Thumbs.db
+_notes/
+.vscode/settings.json

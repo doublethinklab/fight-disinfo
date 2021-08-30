@@ -1,0 +1,104 @@
+{
+	"quiz":[
+		{
+			"type":1,
+			"label":"Conflict",
+			"q":"Does this information conflict with an otherwise established or ‘official’ narrative?"
+		},
+		{
+			"type":1,
+			"label":"Heightened language",
+			"q":"When this information was presented, did it use highly charged language that suggests you are about to ‘wake up’ and discover something that you would not believe or did not know before?"
+		},
+		{
+			"type":1,
+			"label":"Connecting the unconnected",
+			"q":"Does this information link seemingly unrelated world events together into a single narrative?"
+		},
+		{
+			"type":1,
+			"label":"Heroic figure",
+			"q":"Was this information presented by, or does it describe an ‘ideal leader’ or spokesperson of a social movement?"
+		},
+		{
+			"type":1,
+			"label":"Sheeple",
+			"q":"Are the people that dismiss or ignore this information described as blindly following the herd and conforming to the official narrative?"
+		},
+		{
+			"type":1,
+			"label":"Good/evil",
+			"q":"Does this information present the circumstances in question as ‘good vs. evil’ or ‘us vs. them’?"
+		},
+		{
+			"type":1,
+			"label":"Definition",
+			"q":"Does this information suggest that there is a small group of people secretly ‘pulling the strings’ of an event(s) for nefarious gains?"
+		},
+		{
+			"type":1,
+			"label":"Grand narrative",
+			"q":"Does this information form part of a greater, dramatic narrative that can be used to explain a wide array of large-scale events?"
+		},
+		{
+			"type":1,
+			"label":"Many pieces of weak evidence",
+			"q":"Does this information draw on a wide range of partial or weak sources to inform its narrative?"
+		},
+		{
+			"type":1,
+			"label":"Certainty",
+			"q":"Does this information provide you with a sense of certainty about a situation that is otherwise ambiguous or hard to understand?"
+		},
+		{
+			"type":1,
+			"label":"Intuition",
+			"q":"Does this information seem to just ‘feel right’, based on ‘gut feelings’?"
+		},
+		{
+			"type":1,
+			"label":"Conjunction fallacy",
+			"q":"Does this information detail how there was an orchestrated intention or conspiracy behind an event that was otherwise assumed to have naturally occurred or occurred by accident?"
+		},
+		{
+			"type":1,
+			"label":"Lack of intellectual humility",
+			"q":"Does this information require the comprehension of complex information or data that you are not experienced in interpreting?"
+		},
+		{
+			"type":1,
+			"label":"Uniqueness",
+			"q":"Does this information claim to hold unique and coveted knowledge?"
+		},
+		{
+			"type":1,
+			"label":"Blame outgroups",
+			"q":"Does this information detail how a group that you are usually not very fond of is responsible for the shortcomings of a group that you often care deeply about?"
+		},
+		{
+			"type":1,
+			"label":"Social exclusion",
+			"q":"If you were to publicly support this information, would you expect to experience some ‘push-back’ or social exclusion?"
+		},
+		{
+			"type":1,
+			"label":"External threat",
+			"q":"Does this information refer to a large-scale global/political event that poses a threat to the world’s population?"
+		},
+		{
+			"type":1,
+			"label":"Internal threat",
+			"q":"Does this information confirm and explain anxieties you held previously?"
+		},
+		{
+			"type":1,
+			"label":"Catastrophizing",
+			"q":"Does this information explain how something that most people would not frequently consider in their day-to-day lives is actually much more dangerous and dramatic than they would have otherwise thought?"
+		},
+		{
+			"type":2,
+			"label":"Can it be disproved?",
+			"q":"Does this information explain how something that most people would not frequently consider in their day-to-day lives is actually much more dangerous and dramatic than they would have otherwise thought?"
+		}
+	]
+}
