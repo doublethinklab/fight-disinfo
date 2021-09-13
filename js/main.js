@@ -66,7 +66,7 @@ function getQuizFun(){
 		userData["quiz"]=$.extend(true,[],msg["quiz"]);
 		$(".amount span.all").text(userData["quiz"].length);
 		$(".quizBtn").on("click",openGameFun);
-		$(".qa_List_inner.start .btn:nth-child(2)").on("click",startGameFun);
+		$(".qa_List_inner.start .btn :nth-child(2)").on("click",startGameFun);
 		$(".qa_answer input[name=ans]").change(function(e){
 			if($(".qa_answer input[name=ans]:checked").val()!=undefined){
 				$(".qa_List_inner.game .btn").show();
