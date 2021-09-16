@@ -154,7 +154,7 @@ p{
     margin-bottom: 0px;
 }
 .infographic .content{
-    padding: 120px 0 60px 0;
+    padding: 0px 0 60px 0;
 }
 .infographic .content h1{
     font-size: 30px;
@@ -2450,7 +2450,7 @@ label input[type=radio]{
         font-size: 24px;
     }
     .infographic .content{
-        padding: 80px 20px 50px 20px;
+        padding: 0px 20px 50px 20px;
     }
     .infographic .content p{
         text-align: left;
