@@ -126,7 +126,7 @@ function setQuizFun(qnum){
 
 function getPostsFun(){
 	$.ajax({
-        url:"json/aricle.json",
+        url:"json/article.json",
         type: 'GET',
         dataType:"json" 		
 	}).done(function(msg){
