@@ -125,13 +125,11 @@ function setQuizFun(qnum){
 
 
 function getPostsFun(){
-	console.log("here1");
 	$.ajax({
         url:"json/article.json",
         type: 'GET',
         dataType:"json" 		
 	}).done(function(msg){
-		console.log("here2");
 		userData.loadList=$.extend(true,[],msg["posts"]);
 		if(page_type=="page"){
 			shuffleArrayFun(removePostFun(userData.loadList));
@@ -144,7 +142,6 @@ function getPostsFun(){
 
 function setPostFun(posts){
 	var thisload=getNum,addMC=".section5 .video_box";
-	console.log("here");
 	if(posts.length<thisload){
 		thisload=posts.length;
 	}
