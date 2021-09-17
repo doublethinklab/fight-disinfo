@@ -3,6 +3,8 @@ var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : 
 	postTemp='<div class="video"><a class="thumbnail" href="#"></a><div class="brief"><p class="title"></p><p class="name"></p></div><a class="btn small middle" href="#">more</a></div>',getNum=6,userData={};
 userData["score"]=0;
 userData["nowq"]=0;
+var text_answer=["This information is unlikely to be conspiracy theory.","This information may be slightly misleading.", "This information is likely to contain some misleading or inaccurate claims.","There is a decent chance that you have encountered some conspiracy theories here!","It’s very likely that you have encountered conspiracy theories!"];
+
 $(document).ready(function(e){
 	$('a[href="#"]').bind("click", function(e) {e.preventDefault();});
 	$(window).on("resize",resizeFun);
@@ -86,6 +88,8 @@ function getQuizFun(){
 					$(".devil svg:eq("+i+")").addClass("red");
 				}
 				$(".qa_List_inner.result .circle_score span").text(userData["score"]);
+				$(".qa_List_inner.result .circle_title").html(text_answer[Math.round(userData["score"]/20)]);
+
 				$(".progress-bar").loading({"percent":userData["score"]});
 				$(".qa_List_inner.game").hide();
 				$(".qa_List_inner.result").show();

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consequences of Conspiracy Theory | Escape the Mist: Disinfo Walkthrough</title>
+    <title>Conspiracy Theory Checklist | Escape the Mist: Disinfo Walkthrough</title>
   <!-- for Facebook -->
-	<meta property="og:title" content="Consequences of Conspiracy Theory | Disinfo Walkthrough">
+	<meta property="og:title" content="Conspiracy Theory Checklist | Disinfo Walkthrough">
 	<meta property="og:type" content="article">
 	<meta property="og:image" content="https://fight-dis.info/images/coverimg3.png">
-	<meta property="og:description" content="A complete walkthrough to fighting disinformation. What do you need to know about disinformation and what can you do to counter it?">
+	<meta property="og:description" content="Answer 20 Yes/No questions to test if you’ve encountered a conspiracy theory!">
 	<!-- for twitter -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Consequences of Conspiracy Theory | Disinfo Walkthrough">
-	<meta name="twitter:description" content="A complete walkthrough to fighting disinformation. What do you need to know about disinformation and what can you do to counter it?">
+	<meta name="twitter:title" content="Conspiracy Theory Checklist | Disinfo Walkthrough">
+	<meta name="twitter:description" content="Answer 20 Yes/No questions to test if you’ve encountered a conspiracy theory!">
 	<meta name="twitter:image" content="https://fight-dis.info/images/coverimg3.png?raw=true">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="shortcut icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="js/progressbar.js"></script>
+
 </head>
 <body>
     <div id="wrapper">
@@ -44,41 +48,211 @@
         <div class="backtop" style="display: block;"></div>
         <div class="aricle">
             <div class="aricle_title">
-                <h1>Consequences of Conspiracy Theory</h1>
+                <h1>Conspiracy Theory Checklist</h1>
+                <div class="info">
+                    <p class="author"><b>Mikey Biddlestone</b><br>Postgraduate Researcher and Associate Lecturer in the School of Psychology, University of Kent, UK</p>
+                </div>
             </div>
             <img src="images/coverimg3.png" width="100%">
-            <div class="content">
+            <div class="content" id="checklist">
                 <div class="quote">
                     <p>Mikey Biddlestone, the author of this checklist, has detailed some of the characteristics, narratives, associated psychological needs, and damage that conspiracy theories can cause for you and your society.</p>
                 </div>
                 <br><hr><br><br>
-                <h3>Consequences</h3>
+                    <div class="test_Box">
+                        <a class="btn center start quizBtn" href="#" style="font-size: large;">Start the Quiz</a>
+                    </div>
+                    <br><br>
+                    <p>(Each ‘yes’ answer scores 5 points)</p>
+                    <br><br>
+                    <h3><i>Q1. Conflict</i></h3>
+                    <p>Does this information conflict with an otherwise established or ‘official’ narrative?</p><br>
+                    <h3><i>Q2. Heightened language</i></h3>
+                    <p>When this information was presented, did it use highly charged language that suggests you are about to ‘wake up’ and discover something that you would not believe or did not know before?</p><br>
+                    <h3><i>Q3. Connecting the unconnected</i></h3>
+                    <p>Does this information link seemingly unrelated world events together into a single narrative?</p><br>
+                    <h3><i>Q4. Heroic figure</i></h3>
+                    <p>Was this information presented by, or does it describe an ‘ideal leader’ or spokesperson of a social movement?</p><br>
+                    <h3><i>Q5. Sheeple</i></h3>
+                    <p>Are the people that dismiss or ignore this information described as blindly following the herd and conforming to the official narrative?</p><br>
+                    <h3><i>Q6. Good / evil</i></h3>
+                    <p>Does this information present the circumstances in question as ‘good vs. evil’ or ‘us vs. them’?</p><br>
+                    <h3><i>Q7. Definition</i></h3>
+                    <p>Does this information suggest that there is a small group of people secretly ‘pulling the strings’ of an event(s) for nefarious gains?</p><br>
+                    <h3><i>Q8. Grand narrative</i></h3>
+                    <p>Does this information form part of a greater, dramatic narrative that can be used to explain a wide array of large-scale events?</p><br>
+                    <h3><i>Q9. Many pieces of weak evidence</i></h3>
+                    <p>Does this information draw on a wide range of partial or weak sources to inform its narrative?</p><br>
+                    <h3><i>Q10. Certainty</i></h3>
+                    <p>Does this information provide you with a sense of certainty about a situation that is otherwise ambiguous or hard to understand?</p><br>
+                    <h3><i>Q11. Intuition</i></h3>
+                    <p>Does this information seem to just ‘feel right’, based on ‘gut feelings’?</p><br>
+                    <h3><i>Q12. Conjunction fallacy</i></h3>
+                    <p>Does this information detail how there was an orchestrated intention or conspiracy behind an event that was otherwise assumed to have naturally occurred or occurred by accident?</p><br>
+                    <h3><i>Q13. Lack of intellectual humility</i></h3>
+                    <p>Does this information require the comprehension of complex information or data that you are not experienced in interpreting?</p><br>
+                    <h3><i>Q14. Uniqueness</i></h3>
+                    <p>Does this information claim to hold unique and coveted knowledge?</p><br>
+                    <h3><i>Q15. Blame outgroups</i></h3>
+                    <p>Does this information detail how a group that you are usually not very fond of is responsible for the shortcomings of a group that you often care deeply about?</p><br>
+                    <h3><i>Q16. Social exclusion</i></h3>
+                    <p>If you were to publicly support this information, would you expect to experience some ‘push-back’ or social exclusion?</p><br>
+                    <h3><i>Q17. External threat</i></h3>
+                    <p>Does this information refer to a large-scale global/political event that poses a threat to the world’s population?</p><br>
+                    <h3><i>Q18. Internal threat</i></h3>
+                    <p>Does this information confirm and explain anxieties you held previously?</p><br>
+                    <h3><i>Q19. Catastrophizing</i></h3>
+                    <p>Does this information explain how something that most people would not frequently consider in their day-to-day lives is actually much more dangerous and dramatic than they would have otherwise thought?</p><br>
+                    <h3><i>Q20. Can it be disproved?</i></h3>
+                    <p>Can you think of a situation that would disprove this information? If so, please write a brief description in the box below.</p><br><br>
+                    <p><b>Under 20: </b> This information seems very authentic!</p>
+                    <p><b>20-40: </b> This information may be slightly misleading.</p>
+                    <p><b>40-60: </b> This information is likely to contain some misleading or inaccurate claims.</p>
+                    <p><b>60-80: </b> There is a decent chance that you have encountered some conspiracy theories here!</p>
+                    <p id="consequences"><b>Above 80: </b> It’s very likely that you have encountered conspiracy theories!</p>
+                    <br><hr><br><br>
+
+                <h3>Consequences of Conspiracy Theory</h3>
                 <p>The checklist you completed included questions that were designed to determine whether the content you encountered was likely to be conspiracy theory. The questions were based on findings from academic literature on  conspiracy beliefs, hoping to provide you with insights into the nature of the information you encountered. Conspiracy theory has become such a concern during the pandemic that efforts have been mobilised to fight the <a href="https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200202-sitrep-13-ncov-v3.pdf" target="_blank">infodemic</a>. <b>So why the concern?</b></p>
                 <p>While pre-pandemic literature was already uncovering the many negative implications that conspiracy beliefs can have for the self and society (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.2498" target="_blank">social exclusion</a>, <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/bjop.12018" target="_blank">climate change inaction</a>, <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/bjop.12018" target="_blank">political apathy</a>, and <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0089177" target="_blank">existential worries</a> ), these findings were extended to anti-vaccination stances and reduced willingness to follow <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/full/10.1111/bjso.12397" target="_blank">social distancing guidelines</a> soon after the inception of the pandemic. Furthermore, evidence suggests that malicious actors may even conspire to <a href="https://globalnews.ca/news/7494689/csis-accuses-russia-china-iran-coronavirus-covid-19-disinformation/" target="_blank">spread certain misinformation</a> in attempts to aggravate societal conditions that can result in <a href="https://journals.sagepub.com/doi/abs/10.1177/0306396811425984" target="_blank">political extremism and violence</a>. These dangerous consequences demonstrate how vital it is for us to construct new ways to stop conspiracy theory from spreading. <b>So what research was used to inform the checklist?</b></p>
                 <p>The checklist aimed to collect responses about two broad categories: the <b>features or characteristics</b> of the information, and the <b>psychological needs and motives</b> that the information may appeal to. With regards to the features and characteristics, conspiracy theory tend to draw on a <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0233879#sec014" target="_blank">multitude of weak evidential links</a> and rely excessively on simplified <a href="https://journals.sagepub.com/doi/10.1177/1065912915621621" target="_blank">distinctions between ‘good vs. evil’ or ‘us vs. them’</a> to make <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5900972/" target="_blank">false connections between events</a> and form <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/0162-895x.00160" target="_blank">grand narratives</a>. Moreover, this type of information tends to make claims that form the components of conspiracy theories – ideas claiming that certain events are <a href="https://link.springer.com/chapter/10.1007/978-1-4612-4618-3_9" target="_blank">secretly orchestrated by small groups of malevolent actors</a> for nefarious gains. Conspiracist claims tend to be <a href="https://journals.sagepub.com/doi/full/10.1177/0963721417718261" target="_blank">impossible to disprove</a>, <a href="https://www.pdcnet.org/ijap/content/ijap_2011_0025_0001_0015_0024" target="_blank">challenge widely supported official narratives</a>, portray a <a href="http://etheses.dur.ac.uk/13147/1/Thesis_Final_Toseland.pdf?DDD32+" target="_blank">belief in the claims as ‘waking up’</a>, often <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00861/full" target="_blank">describe and/or originate from a cult-like ‘ideal’ leader</a>, and accuse non-believers of <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00861/full" target="_blank">blindly following official narratives (“sheeple”)</a>. These factors provide fertile ground for the consequences discussed to harm individuals and society. <b>So why are people drawn to them?</b></p>
                 <p>Psychology researchers widely support the notion that conspiracy theories <a href="https://journals.sagepub.com/doi/full/10.1177/0963721417718261" target="_blank">appeal to certain psychological needs</a>. These needs can be broken down into three broad categories: epistemic (the need to understand the world), existential (the need to feel safe and secure), and social (the need to maintain a positive image of the self and ingroup). With regards to epistemic needs, conspiracy theories are particularly appealing to people that rely on ‘gut feelings’ or <a href="https://www.sciencedirect.com/science/article/pii/S0010027714001632?via%3Dihub" target="_blank">intuitions</a> to form their understanding about complex issues that they do not necessarily have the <a href="https://onlinelibrary.wiley.com/doi/10.1002/acp.3301" target="_blank">education</a> or <a href="https://www.sciencedirect.com/science/article/pii/S0191886917306323?via%3Dihub" target="_blank">capacity</a> to fully comprehend. These thinking styles also lead individuals to rely on <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/acp.2995" target="_blank">biases</a> to achieve a <a href="https://www.sciencedirect.com/science/article/pii/S0191886916303221?via%3Dihub" target="_blank">false sense of certainty</a> about the world around them. With regards to existential needs, conspiracy theories also capitalise on and provide explanations for <a href="https://link.springer.com/article/10.1007/s12144-013-9165-6" target="_blank">anxieties</a> that people have about events perceived as <a href="https://pubmed.ncbi.nlm.nih.gov/28632335/" target="_blank">threatening</a> or <a href="https://www.sciencedirect.com/science/article/pii/S0191886916303221?via%3Dihub" target="_blank">dangerous</a>. With regards to social needs, conspiracy theories can be used by individuals that wish to express <a href="https://econtent.hogrefe.com/doi/full/10.1027/1864-9335/a000306" target="_blank">personal uniqueness from others</a>, and <a href="https://pubmed.ncbi.nlm.nih.gov/26511288/" target="_blank">blame outgroups</a> for the <a href="https://ejop.psychopen.eu/index.php/ejop/article/view/1699" target="_blank">negative experiences</a> of one’s ingroup. Aside from the propensity for these needs to lead individuals to form incorrect impressions of the world, they can also <a href="https://journals.sagepub.com/doi/10.1177/0963721420917703" target="_blank">exacerbate intergroup tensions</a> and exaggerate the threats we may encounter.</p>
                 <br><br><hr><br><br>
+                <div class="cover_Box">
+                    <div class="cover_Box_inn">
+                        <h4><span class="inmobile_wrap"><br><strong>Conspiracy Theory Checklist</strong></span></h4>
+                        <a class="btn center start quizBtn" href="#">Start</a>
+                    </div>
+                </div>                
                 <p>This is based on 7 unpublished studies by Ricky Green at the University of Kent showing that catastrophising life’s problems is associated with stronger belief in conspiracy theories. </p>
+            
+            <div class="test_Box">
+                <a class="btn aricle_btn" href="index.html">Back to the Disinfo Walkthrough</a>
             </div>
-            <div class="relate">
-                <hr>
-                <h3></h3>
-                <div class="video_box  clearfix">
-                    <a class="video list2" href="checklist.html">
-                        <div class="thumbnail">
-                            <div class="playIcon"></div>
+
+            </div>
+
+            
+        </div>
+        <div class="qa_List_Box" style="display: none;">
+            <div class="qa_List clearfix">
+                <a class="close" href="#"></a>
+                <div class="qa_List_inner cover start">
+                    <div class="left bg1"></div>
+                    <div class="right bg1">
+                        <h2><span class="inweb_wrap">Conspiracy Theory Checklist</span></h2>
+                        <h3 class="mb50">Answer 20 Yes/No questions to test if you’ve encountered one!</h3>
+            <a class="btn nobg" href="conspiracytheory.html" style="right: auto;">Read More</a>
+                        <a class="btn nobg startGame" href="#">Start!</a>
+                    </div>
+                </div>
+                <div class="qa_List_inner game">
+                    <div class="left bg2"></div>
+                    <div class="right bg2">
+                        <p class="amount">(<span class="now"></span> / <span class="all"></span>)</p>
+                        <h3></h3>
+                        <div class="qa_question">
+                            <p></p>
                         </div>
-                        <div class="brief">
-                            <p class="title">Conspiracy Theory Checklist</p>
+                        <div class="qa_answer">
+                            <div class="label_Box">
+                                <label><input type="radio" name="ans" value="y"><span class="square"></span><p>Yes</p></label>
+                                <label><input type="radio" name="ans" value="n"><span class="square"></span><p>No</p></label>
+                            </div>
+                            <textarea cols="30" rows="10" required minlength:30 placeholder="Your Answer"></textarea>
                         </div>
-                        <div class="btn small middle">more</div>
-                    </a>
+                        <a class="btn nobg" href="#" style="display: none;">Next</a>
+                    </div>
+                </div>
+                <div class="qa_List_inner result" style="display: none;">
+                    <div class="left">
+                        <div class="circle_Box">
+                            <div class="mark">                       
+                                <h2>Risk Index</h2>
+                               <div class="devil">
+                                   <svg class="red" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 27.2 26.1" width="50px" height="50px">
+                                       <path d="M2.5,7.2C0.9,3.8,2.3,1.1,2.4,1c0.2-0.3,0.5-0.5,0.9-0.4C3.6,0.7,3.9,1,3.9,1.3c0,0,0.1,0.8,1.6,2.2c2.2-1.9,5.1-2.9,8-2.9
+                                       c3,0,5.8,1,8,2.9c1.5-1.3,1.6-2.1,1.6-2.1c0-0.4,0.2-0.7,0.6-0.8c0.4-0.1,0.7,0.1,0.9,0.4c0.1,0.1,1.5,2.9,0,6.3
+                                       c1,1.8,1.5,3.8,1.5,5.9c0,6.9-5.6,12.6-12.6,12.6S1,20.1,1,13.2C1,11.1,1.5,9.1,2.5,7.2z M11.1,10.3L7.7,7C7.4,6.7,6.9,6.7,6.6,7
+                                       C6,7.6,5.7,8.4,5.7,9.2c0,0.8,0.3,1.6,0.9,2.2c0.6,0.6,1.4,0.9,2.2,0.9s1.6-0.3,2.2-0.9C11.4,11.1,11.4,10.6,11.1,10.3z M20.5,7
+                                       c-0.3-0.3-0.8-0.3-1.1,0L16,10.3c-0.3,0.3-0.3,0.8,0,1.1c0.6,0.6,1.4,0.9,2.2,0.9c0.8,0,1.6-0.3,2.2-0.9c0.6-0.6,0.9-1.4,0.9-2.2
+                                       C21.4,8.4,21.1,7.6,20.5,7z M4.5,15.7c1.1,4,4.9,6.9,9.1,6.9s7.9-2.8,9.1-6.9c0.1-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.4-0.3-0.6-0.3H5.2
+                                       c-0.2,0-0.5,0.1-0.6,0.3C4.5,15.2,4.4,15.5,4.5,15.7z"/>
+                                   </svg>
+                                   <svg class="red" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 27.2 26.1" width="50px" height="50px">
+                                       <path d="M2.5,7.2C0.9,3.8,2.3,1.1,2.4,1c0.2-0.3,0.5-0.5,0.9-0.4C3.6,0.7,3.9,1,3.9,1.3c0,0,0.1,0.8,1.6,2.2c2.2-1.9,5.1-2.9,8-2.9
+                                       c3,0,5.8,1,8,2.9c1.5-1.3,1.6-2.1,1.6-2.1c0-0.4,0.2-0.7,0.6-0.8c0.4-0.1,0.7,0.1,0.9,0.4c0.1,0.1,1.5,2.9,0,6.3
+                                       c1,1.8,1.5,3.8,1.5,5.9c0,6.9-5.6,12.6-12.6,12.6S1,20.1,1,13.2C1,11.1,1.5,9.1,2.5,7.2z M11.1,10.3L7.7,7C7.4,6.7,6.9,6.7,6.6,7
+                                       C6,7.6,5.7,8.4,5.7,9.2c0,0.8,0.3,1.6,0.9,2.2c0.6,0.6,1.4,0.9,2.2,0.9s1.6-0.3,2.2-0.9C11.4,11.1,11.4,10.6,11.1,10.3z M20.5,7
+                                       c-0.3-0.3-0.8-0.3-1.1,0L16,10.3c-0.3,0.3-0.3,0.8,0,1.1c0.6,0.6,1.4,0.9,2.2,0.9c0.8,0,1.6-0.3,2.2-0.9c0.6-0.6,0.9-1.4,0.9-2.2
+                                       C21.4,8.4,21.1,7.6,20.5,7z M4.5,15.7c1.1,4,4.9,6.9,9.1,6.9s7.9-2.8,9.1-6.9c0.1-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.4-0.3-0.6-0.3H5.2
+                                       c-0.2,0-0.5,0.1-0.6,0.3C4.5,15.2,4.4,15.5,4.5,15.7z"/>
+                                   </svg>
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 27.2 26.1" width="50px" height="50px">
+                                       <path d="M2.5,7.2C0.9,3.8,2.3,1.1,2.4,1c0.2-0.3,0.5-0.5,0.9-0.4C3.6,0.7,3.9,1,3.9,1.3c0,0,0.1,0.8,1.6,2.2c2.2-1.9,5.1-2.9,8-2.9
+                                       c3,0,5.8,1,8,2.9c1.5-1.3,1.6-2.1,1.6-2.1c0-0.4,0.2-0.7,0.6-0.8c0.4-0.1,0.7,0.1,0.9,0.4c0.1,0.1,1.5,2.9,0,6.3
+                                       c1,1.8,1.5,3.8,1.5,5.9c0,6.9-5.6,12.6-12.6,12.6S1,20.1,1,13.2C1,11.1,1.5,9.1,2.5,7.2z M11.1,10.3L7.7,7C7.4,6.7,6.9,6.7,6.6,7
+                                       C6,7.6,5.7,8.4,5.7,9.2c0,0.8,0.3,1.6,0.9,2.2c0.6,0.6,1.4,0.9,2.2,0.9s1.6-0.3,2.2-0.9C11.4,11.1,11.4,10.6,11.1,10.3z M20.5,7
+                                       c-0.3-0.3-0.8-0.3-1.1,0L16,10.3c-0.3,0.3-0.3,0.8,0,1.1c0.6,0.6,1.4,0.9,2.2,0.9c0.8,0,1.6-0.3,2.2-0.9c0.6-0.6,0.9-1.4,0.9-2.2
+                                       C21.4,8.4,21.1,7.6,20.5,7z M4.5,15.7c1.1,4,4.9,6.9,9.1,6.9s7.9-2.8,9.1-6.9c0.1-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.4-0.3-0.6-0.3H5.2
+                                       c-0.2,0-0.5,0.1-0.6,0.3C4.5,15.2,4.4,15.5,4.5,15.7z"/>
+                                   </svg>
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 27.2 26.1" width="50px" height="50px">
+                                       <path d="M2.5,7.2C0.9,3.8,2.3,1.1,2.4,1c0.2-0.3,0.5-0.5,0.9-0.4C3.6,0.7,3.9,1,3.9,1.3c0,0,0.1,0.8,1.6,2.2c2.2-1.9,5.1-2.9,8-2.9
+                                       c3,0,5.8,1,8,2.9c1.5-1.3,1.6-2.1,1.6-2.1c0-0.4,0.2-0.7,0.6-0.8c0.4-0.1,0.7,0.1,0.9,0.4c0.1,0.1,1.5,2.9,0,6.3
+                                       c1,1.8,1.5,3.8,1.5,5.9c0,6.9-5.6,12.6-12.6,12.6S1,20.1,1,13.2C1,11.1,1.5,9.1,2.5,7.2z M11.1,10.3L7.7,7C7.4,6.7,6.9,6.7,6.6,7
+                                       C6,7.6,5.7,8.4,5.7,9.2c0,0.8,0.3,1.6,0.9,2.2c0.6,0.6,1.4,0.9,2.2,0.9s1.6-0.3,2.2-0.9C11.4,11.1,11.4,10.6,11.1,10.3z M20.5,7
+                                       c-0.3-0.3-0.8-0.3-1.1,0L16,10.3c-0.3,0.3-0.3,0.8,0,1.1c0.6,0.6,1.4,0.9,2.2,0.9c0.8,0,1.6-0.3,2.2-0.9c0.6-0.6,0.9-1.4,0.9-2.2
+                                       C21.4,8.4,21.1,7.6,20.5,7z M4.5,15.7c1.1,4,4.9,6.9,9.1,6.9s7.9-2.8,9.1-6.9c0.1-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.4-0.3-0.6-0.3H5.2
+                                       c-0.2,0-0.5,0.1-0.6,0.3C4.5,15.2,4.4,15.5,4.5,15.7z"/>
+                                   </svg>
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 27.2 26.1" width="50px" height="50px">
+                                       <path d="M2.5,7.2C0.9,3.8,2.3,1.1,2.4,1c0.2-0.3,0.5-0.5,0.9-0.4C3.6,0.7,3.9,1,3.9,1.3c0,0,0.1,0.8,1.6,2.2c2.2-1.9,5.1-2.9,8-2.9
+                                       c3,0,5.8,1,8,2.9c1.5-1.3,1.6-2.1,1.6-2.1c0-0.4,0.2-0.7,0.6-0.8c0.4-0.1,0.7,0.1,0.9,0.4c0.1,0.1,1.5,2.9,0,6.3
+                                       c1,1.8,1.5,3.8,1.5,5.9c0,6.9-5.6,12.6-12.6,12.6S1,20.1,1,13.2C1,11.1,1.5,9.1,2.5,7.2z M11.1,10.3L7.7,7C7.4,6.7,6.9,6.7,6.6,7
+                                       C6,7.6,5.7,8.4,5.7,9.2c0,0.8,0.3,1.6,0.9,2.2c0.6,0.6,1.4,0.9,2.2,0.9s1.6-0.3,2.2-0.9C11.4,11.1,11.4,10.6,11.1,10.3z M20.5,7
+                                       c-0.3-0.3-0.8-0.3-1.1,0L16,10.3c-0.3,0.3-0.3,0.8,0,1.1c0.6,0.6,1.4,0.9,2.2,0.9c0.8,0,1.6-0.3,2.2-0.9c0.6-0.6,0.9-1.4,0.9-2.2
+                                       C21.4,8.4,21.1,7.6,20.5,7z M4.5,15.7c1.1,4,4.9,6.9,9.1,6.9s7.9-2.8,9.1-6.9c0.1-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.4-0.3-0.6-0.3H5.2
+                                       c-0.2,0-0.5,0.1-0.6,0.3C4.5,15.2,4.4,15.5,4.5,15.7z"/>
+                                   </svg>
+                               </div>
+                           </div>
+                            <div class="circle">
+                                <div class="circle_inner">
+                                    <p class="circle_score"><span>95</span>%</p>
+                                    <p class="circle_title">Likely to be<br>conspiracy theories</p>
+                                </div>
+                                <div class="bg"></div>
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right bg1">
+                        <h2 class="mb50">Is the information you tested likely to be a conspiracy theory?</h2>
+                        <div class="qaList_word">
+                            <p>This checklist aims to raise your awareness of the conspiracy theories around you. It can have catastrophic effects in many ways. Check below to learn more!</p>
+                            <img src="images/remind.svg">
+                        </div>
+                        <div class="btn_Box">
+                            <a class="btn nobg" href="conspiracytheory.html">Share the Checklist & Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <div id="footer" class="type2"></div>
     </div>
     <script>var page_type="page";</script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        
+        getQuizFun();
+        $(".qa_List_Box .close").on("click",function(e){
+            resetQuizFun();
+            $("body").attr("style","");
+            $(".qa_List_Box").hide();
+        });
+
+    </script>
 </body>
 </html>
