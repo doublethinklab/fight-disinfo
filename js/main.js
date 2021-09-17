@@ -118,7 +118,7 @@ function setQuizFun(qnum){
 	$(".qa_List_inner.game .btn").hide();
 	$(".amount span.now").text(qnum+1);
 	if(qnum==userData["quiz"].length-1){
-		$(".qa_List_inner.game .btn").text("result");
+		$(".qa_List_inner.game .btn").text("See Result");
 		$(".qa_List_inner.game").addClass("q2")
 	}
 }
