@@ -33,7 +33,7 @@ $(document).ready(function(e){
 		})
 	}else if(page_type=="page"){
 		var u=window.location.href;
-		if(u.match("section5")!=null){
+		if(iamsection5!=null){
 			getNum=3;
 			getPostsFun();
 		}
@@ -125,11 +125,13 @@ function setQuizFun(qnum){
 
 
 function getPostsFun(){
+	console.log("here1");
 	$.ajax({
         url:"json/article.json",
         type: 'GET',
         dataType:"json" 		
 	}).done(function(msg){
+		console.log("here2");
 		userData.loadList=$.extend(true,[],msg["posts"]);
 		if(page_type=="page"){
 			shuffleArrayFun(removePostFun(userData.loadList));
@@ -142,6 +144,7 @@ function getPostsFun(){
 
 function setPostFun(posts){
 	var thisload=getNum,addMC=".section5 .video_box";
+	console.log("here");
 	if(posts.length<thisload){
 		thisload=posts.length;
 	}
@@ -155,6 +158,7 @@ function setPostFun(posts){
 		$(".name",_mc).text(posts[i]["author"]);
 		$("a",_mc).attr("href",posts[i]["href"]);
 		$(addMC).append(_mc);
+
 	}
 	posts.splice(0, thisload);
 	if(page_type=="index"){
