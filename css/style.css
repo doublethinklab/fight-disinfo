@@ -441,7 +441,7 @@ p{
     background-image: url(../images/section2_video3.png);
 }
 .video.video4 .thumbnail{
-    background-image: url(../images/factcheck1.png);
+    background-image: url(../images/factcheck1.png?update);
 }
 .video.video5 .thumbnail{
     background-image: url(../images/factcheck2.png);
