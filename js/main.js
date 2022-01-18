@@ -33,7 +33,7 @@ $(document).ready(function(e){
 		})
 	}else if(page_type=="page"){
 		var u=window.location.href;
-		if(iamsection5!=null){
+		if(typeof(iamsection5)!="undefined"){
 			getNum=3;
 			getPostsFun();
 		}
@@ -181,8 +181,12 @@ function removePostFun(posts){
 
 function openmethodFun(e){
 	if($(window).width()<768){
-		$(".section3_1 .method").removeClass("active");
-		$(this).addClass("active");
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+		}else{
+			$(".section3_1 .method").removeClass("active");
+			$(this).addClass("active");
+		}
 	}else{
 		$(".section3_1 .method").removeClass("active");
 	}
