@@ -249,6 +249,7 @@ p{
     align-items: center;
     justify-content: center;
     margin-top: 16px;
+    margin-bottom: 30px;
 }
 .footer_logo.bottom img{
     height: 60px;
@@ -256,6 +257,15 @@ p{
 }
 .footer_logo.bottom>img:last-child{
     margin-right: 0px;
+}
+.footer_inner > a{
+    width: 100%;
+    display: block;
+}
+.footer_inner > a > img{
+    margin: 0 auto;
+    width: 100px;
+    display: block;
 }
 #footer.type2 .footer_logo.top p{
     color: #fff;
