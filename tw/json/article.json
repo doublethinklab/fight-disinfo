@@ -1,0 +1,34 @@
+{
+	"posts":[
+		{
+			"href":"How-Democratic-Deliberation-Can-Challenge-Disinformation.html",
+			"img":"case1.jpeg",
+			"title":"民主審議可如何挑戰惡意不實訊息：來自菲律賓的分享",
+			"author":"Bianca Ysabelle Franco & Nicole Curato"
+		},
+		{
+			"href":"Vietnams-2021-General-Election-The-Model-of-Disinformation.html",
+			"img":"case2.png",
+			"title":"越南2021年大選：惡意不實訊息的模式",
+			"author":"Trinh Huu Long"
+		},
+		{
+			"href":"Mitigating-Disinformation-Towards-a-Whole-of-Society-Approach.html",
+			"img":"case3.png",
+			"title":"減輕惡意不實訊息的衝擊：發展全社會的方法",
+			"author":"Jonathan Corpus Ong"
+		},
+		{
+			"href":"Localising-Digital-Knowledge-to-Combat-Disinformation-on-Covid-19-in-Timor-Leste.html",
+			"img":"case4.jpeg",
+			"title":"東帝汶將數位知識本地化以對抗COVID-19惡意不實訊息",
+			"author":"台灣民主實驗室"
+		},
+		{
+			"href":"Artists-for-Digital-Rights-Network.html",
+			"img":"case5.png",
+			"title":"藝術家支持數位權聯盟（Artists For Digital Rights Network）",
+			"author":"台灣民主實驗室"
+		}		
+	]
+}
